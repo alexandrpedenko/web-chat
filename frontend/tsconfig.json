@@ -19,10 +19,17 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "strictPropertyInitialization": false,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shared/*": ["src/app/shared/*"],
+      "@user/*": ["src/app/user/*"],
+      "@auth/*": ["src/app/auth/*"],
+      "@home/*": ["src/app/home/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

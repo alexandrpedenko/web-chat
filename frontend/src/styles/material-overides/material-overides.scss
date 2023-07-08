@@ -1,0 +1,17 @@
+mat-form-field {
+  margin-top: 10px;
+}
+
+// Toast
+.cdk-overlay-container .mat-snack-bar-container {
+  padding: 0;
+}
+.mdc-snackbar.mat-mdc-snack-bar-container.mdc-snackbar--open {
+  .mdc-snackbar__surface {
+    background-color: transparent;
+    padding: 0;
+  }
+  .mdc-snackbar__label {
+    padding: 0;
+  }
+}

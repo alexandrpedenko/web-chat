@@ -52,11 +52,7 @@ export class AuthService {
         HttpStatus.BAD_REQUEST,
       );
     }
-
     const { id, email, username, password } = user;
-
-    console.log(userPayload.password, password);
-
     const isPasswordValid = await this.comparePasswords(
       userPayload.password,
       password,
@@ -67,7 +63,6 @@ export class AuthService {
         id,
         email,
       });
-
       user.refreshToken = refreshToken;
       await this.usersRepository.save(user);
 
@@ -157,7 +152,7 @@ export class AuthService {
             email,
           },
         },
-        { secret: this.configService.get('JWT_SECRET'), expiresIn: 60 * 15 },
+        { secret: this.configService.get('JWT_SECRET'), expiresIn: '10m' },
       ),
 
       this.jwtService.signAsync(

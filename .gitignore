@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+/frontend/.env
+/api/.env
+
 # Logs
 logs
 *.log

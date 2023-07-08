@@ -1,0 +1,12 @@
+.header {
+  margin-bottom: 20px;
+  &__spacer {
+    flex: 1 1 auto;
+  }
+
+  &__logo {
+    color: #232323;
+    font-style: italic;
+    text-decoration: none;
+  }
+}

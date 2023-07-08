@@ -1,0 +1,36 @@
+.toast {
+  display: flex;
+  padding: 20px 28px;
+
+  h3 {
+    margin: 0;
+  }
+
+  &.error {
+    background-color: #E53935;
+  }
+
+  &.success {
+    background-color: #26A69A;
+  }
+
+  &__description {
+    color: #fff;
+    flex: 1 0 auto;
+  }
+  &__message {
+    max-width: 300px;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: lowercase;
+    font-size: 16px;
+    white-space: normal;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    align-self: flex-end;
+  }
+}
+
